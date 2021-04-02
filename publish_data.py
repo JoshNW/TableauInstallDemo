@@ -45,7 +45,7 @@ import tableauserverclient as TSC
 #Authentication
 #https://tableau.github.io/server-client-python/docs/api-ref#authentication
 tableau_auth = TSC.TableauAuth('admin', 'password', site_id='')
-server = TSC.Server('http://34.68.160.35', use_server_version=True)
+server = TSC.Server('http://localhost', use_server_version=True)
 with server.auth.sign_in(tableau_auth):
     print("Sign in Sucessfull")
     

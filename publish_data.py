@@ -50,7 +50,7 @@ with server.auth.sign_in(tableau_auth):
     print("Sign in Sucessfull")
     
     # create project item
-    new_project = TSC.ProjectItem(name='Tableua Demo Project', content_permissions='LockedToProject', description='Interview Demo Project created with API')
+    new_project = TSC.ProjectItem(name='Tableau Demo Project', content_permissions='LockedToProject', description='Interview Demo Project created with API')
     
     # create the project
     new_project = server.projects.create(new_project)

@@ -58,7 +58,7 @@ with server.auth.sign_in(tableau_auth):
     
     #get Project ID
     #https://community.tableau.com/s/question/0D54T000006B4SPSA0/how-to-get-the-projectid-from-the-tableau-server
-    found = [proj for proj in TSC.Pager(server.projects) if proj.name == 'Tableau Demo Project']
+    found = [proj for proj in TSC.Pager(server.projects) if proj.name != 'demo']
     project_id = found[0].id
     print("Project ID Set")
     
